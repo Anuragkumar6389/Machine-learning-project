@@ -13,14 +13,14 @@ data = {
 
 df = pd.DataFrame(data)
 
-# Features & Target
+# Features & Targets 
 X = df[["Area","Bedrooms"]]
 y = df["Price"]
 
 # Split
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2)
 
-# Model
+#   MODELS
 model = LinearRegression()
 model.fit(X_train, y_train)
 
